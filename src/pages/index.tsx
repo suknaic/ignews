@@ -11,6 +11,13 @@ interface HomeProps {
   }
 }
 
+// CSR client-side chamada a api dentro do component react carregada por acao
+// SSR server-side GetServerSideProps faz a chamada usando o server do next
+// SSG static site generation GetStaticProps faz a chamada no server e cria um arquivo statico
+
+// POST DO BLOG - SSG
+// COMENTARIOS - CSR
+
 export default function Home({ product }: HomeProps) {
   return (
     <>
